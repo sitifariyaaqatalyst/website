@@ -3,53 +3,111 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Qatalyst</title>
-  <meta name="description" content="Quantum-ready optimisation for real-world transport and logistics systems." />
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.6; }
-    .wrap { max-width: 960px; margin: 0 auto; padding: 48px 20px; }
-    header { padding: 28px 0 10px; }
-    h1 { font-size: 40px; margin: 0; letter-spacing: -0.02em; }
-    p.lead { font-size: 18px; max-width: 720px; }
-    .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 26px; }
-    .card { border: 1px solid #e6e6e6; border-radius: 14px; padding: 16px; background: #fff; }
-    .cta { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
-    a.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid #111; text-decoration: none; color: #111; }
-    a.btn.primary { background: #111; color: #fff; }
-    footer { margin-top: 40px; font-size: 14px; color: #555; }
-  </style>
+  <title>Qatalyst | Quantum-ready optimisation</title>
+  <meta name="description" content="Qatalyst builds quantum-ready optimisation software for real-world transport, ports, and logistics systems, converting operational problems into QUBO formulations." />
+
+  <meta property="og:title" content="Qatalyst | Quantum-ready optimisation" />
+  <meta property="og:description" content="Autonomous optimisation that converts real-world problems into QUBO, compatible with classical and quantum backends." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qatalyst-quantum.co.uk/" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Qatalyst</h1>
-      <p class="lead">Quantum-ready optimisation for real-world transport and logistics systems. We automate the translation of complex operational problems into QUBO formulations, enabling rapid re-optimisation on classical and quantum backends.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:hello@qatalyst-quantum.co.uk">Contact</a>
-        <a class="btn" href="#usecases">Use cases</a>
-      </div>
-    </header>
+  <a class="skip" href="#content">Skip to content</a>
 
-    <section id="usecases" class="grid">
-      <div class="card">
-        <strong>Ports and terminals</strong>
-        <div>Yard and lane allocation, congestion reduction, ferry and berth scheduling.</div>
-      </div>
-      <div class="card">
-        <strong>Freight and logistics</strong>
-        <div>Routing, energy-aware scheduling, emissions minimisation.</div>
-      </div>
-      <div class="card">
-        <strong>Transport systems</strong>
-        <div>Multimodal coordination, disruption response, resilience planning.</div>
-      </div>
-    </section>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Qatalyst</span>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a data-nav href="/">Home</a>
+        <a data-nav href="technology.html">Technology</a>
+        <a data-nav href="use-cases.html">Use cases</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-      © <span id="y"></span> Qatalyst. All rights reserved.
-    </footer>
-  </div>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <main id="content">
+    <div class="container">
+      <section class="hero">
+        <div class="kicker"><span class="kdot" aria-hidden="true"></span> Quantum-ready, classical-compatible</div>
+        <h1>Optimisation for complex systems that change in real time.</h1>
+        <p class="lead">
+          Qatalyst builds autonomous optimisation software that turns operational constraints into QUBO formulations, enabling fast re-optimisation for transport, ports, and logistics.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="technology.html">Explore the technology</a>
+          <a class="btn secondary" href="use-cases.html">See use cases</a>
+          <a class="btn" href="contact.html">Talk to us</a>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Key outcomes">
+        <div class="card">
+          <h3>Faster decisions</h3>
+          <p>Automate problem formulation and re-optimise as conditions change.</p>
+        </div>
+        <div class="card">
+          <h3>Operational clarity</h3>
+          <p>Make constraints explicit, auditable, and explainable.</p>
+        </div>
+        <div class="card">
+          <h3>Decarbonisation ready</h3>
+          <p>Optimise for time, cost, and emissions with the same framework.</p>
+        </div>
+      </section>
+
+      <section class="section two">
+        <div class="panel">
+          <h2>What we do</h2>
+          <p class="lead" style="margin-bottom:0">
+            We combine agentic automation with optimisation engineering. Qatalyst observes system state, generates QUBO models from constraints, and solves them using classical and quantum backends.
+          </p>
+          <ul class="list">
+            <li>Problem structuring and constraint capture</li>
+            <li>Automated translation to QUBO</li>
+            <li>Continuous re-optimisation and decision support</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h2>Where it fits</h2>
+          <div class="badges" aria-label="Focus areas">
+            <span class="badge">Ports and terminals</span>
+            <span class="badge">Freight routing</span>
+            <span class="badge">Scheduling</span>
+            <span class="badge">Energy-aware planning</span>
+            <span class="badge">Emissions optimisation</span>
+            <span class="badge">Disruption response</span>
+          </div>
+          <p class="help">Want a simple one page pitch version as well. I can generate it.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>
+        <strong>Qatalyst</strong><br />
+        <span class="small">Quantum-ready optimisation for real-world systems.</span>
+      </div>
+      <div class="small">
+        <a href="contact.html">Contact</a><br />
+        <a href="technology.html">Technology</a><br />
+        <a href="use-cases.html">Use cases</a>
+      </div>
+      <div class="small">
+        © <span id="year"></span> Qatalyst
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
