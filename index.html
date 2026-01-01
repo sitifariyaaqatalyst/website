@@ -1,1 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Qatalyst</title>
+  <meta name="description" content="Quantum-ready optimisation for real-world transport and logistics systems." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.6; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 48px 20px; }
+    header { padding: 28px 0 10px; }
+    h1 { font-size: 40px; margin: 0; letter-spacing: -0.02em; }
+    p.lead { font-size: 18px; max-width: 720px; }
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 26px; }
+    .card { border: 1px solid #e6e6e6; border-radius: 14px; padding: 16px; background: #fff; }
+    .cta { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+    a.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid #111; text-decoration: none; color: #111; }
+    a.btn.primary { background: #111; color: #fff; }
+    footer { margin-top: 40px; font-size: 14px; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Qatalyst</h1>
+      <p class="lead">Quantum-ready optimisation for real-world transport and logistics systems. We automate the translation of complex operational problems into QUBO formulations, enabling rapid re-optimisation on classical and quantum backends.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:hello@qatalyst-quantum.co.uk">Contact</a>
+        <a class="btn" href="#usecases">Use cases</a>
+      </div>
+    </header>
+
+    <section id="usecases" class="grid">
+      <div class="card">
+        <strong>Ports and terminals</strong>
+        <div>Yard and lane allocation, congestion reduction, ferry and berth scheduling.</div>
+      </div>
+      <div class="card">
+        <strong>Freight and logistics</strong>
+        <div>Routing, energy-aware scheduling, emissions minimisation.</div>
+      </div>
+      <div class="card">
+        <strong>Transport systems</strong>
+        <div>Multimodal coordination, disruption response, resilience planning.</div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Qatalyst. All rights reserved.
+    </footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
 
