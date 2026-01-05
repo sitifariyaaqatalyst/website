@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Technology | Qatalyst</title>
+  <meta name="description" content="How Qatalyst captures operational constraints, builds optimisation models automatically, and selects classical, hybrid, or quantum back-ends when beneficial." />
+
+  <meta property="og:title" content="Technology | Qatalyst" />
+  <meta property="og:description" content="Classical-first optimisation with a quantum-ready path. Automated model generation, solver selection, and explainable decision outputs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qatalyst-quantum.co.uk/technology.html" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Qatalyst</span>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a data-nav href="/">Home</a>
+        <a data-nav href="technology.html">Technology</a>
+        <a data-nav href="use-cases.html">Use cases</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="container">
+      <section class="hero">
+        <div class="kicker"><span class="kdot" aria-hidden="true"></span> Technology</div>
+        <h1>Optimisation that stays practical.</h1>
+        <p class="lead">
+          Qatalyst converts operational decisions into ready-to-solve optimisation models, selects the most suitable solver, and returns explainable outputs.
+          Classical optimisation is the default. Hybrid and quantum options are used selectively when scale and coupling justify it.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="contact.html">Request a demo</a>
+          <a class="btn secondary" href="use-cases.html#charging">See the charging study case</a>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Core capabilities">
+        <div class="card">
+          <h3>Automatic model generation</h3>
+          <p>Turn objectives, constraints, and operational rules into optimisation models without manual maths.</p>
+        </div>
+        <div class="card">
+          <h3>Solver selection</h3>
+          <p>Choose classical, hybrid, or quantum back-ends based on structure, runtime, hardware, and cost.</p>
+        </div>
+        <div class="card">
+          <h3>Explainable decisions</h3>
+          <p>Return decisions with clear constraint checks, trade-offs, and auditable outputs.</p>
+        </div>
+      </section>
+
+      <section class="section two" aria-label="How it works">
+        <div class="panel">
+          <h2>How it works</h2>
+          <p class="lead" style="margin-bottom:0">
+            Qatalyst runs as a decision layer. It ingests operational inputs, builds a model, solves it, and publishes actions you can implement.
+          </p>
+          <ul class="list">
+            <li><strong>Capture</strong> objectives, constraints, and policies (capacity, time windows, power limits, compatibility rules)</li>
+            <li><strong>Build</strong> a structured optimisation model from the captured rules</li>
+            <li><strong>Solve</strong> with the best-fit back-end (classical first, hybrid or quantum when beneficial)</li>
+            <li><strong>Return</strong> actionable outputs with constraint checks and traceability</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h2>What you provide</h2>
+          <p class="lead" style="margin-bottom:0">
+            You do not need to provide equations. You provide operational inputs in the format you already use.
+          </p>
+          <ul class="list">
+            <li>Demand, jobs, arrivals, or bookings</li>
+            <li>Resource and capacity limits (chargers, lanes, staff, bays, power caps)</li>
+            <li>Time windows and deadlines</li>
+            <li>Operational policies and priorities</li>
+            <li>Cost and emissions preferences (optional)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section panel" aria-label="Model types">
+        <h2>Model types we support</h2>
+        <p class="lead">
+          Qatalyst supports the optimisation structures commonly used in operations. Where appropriate, models can be mapped into quadratic forms
+          suitable for specialised solvers, including quantum-ready back-ends.
+        </p>
+        <section class="section grid" style="margin-top:18px">
+          <div class="card">
+            <h3>Assignment and allocation</h3>
+            <p>Allocate jobs to resources under capacity and compatibility rules.</p>
+          </div>
+          <div class="card">
+            <h3>Scheduling</h3>
+            <p>Sequence tasks with deadlines, setup times, and limited resources.</p>
+          </div>
+          <div class="card">
+            <h3>Routing and network flow</h3>
+            <p>Route vehicles or goods through networks with time windows and congestion constraints.</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="section two" aria-label="Solver strategy">
+        <div class="panel">
+          <h2>Solver strategy</h2>
+          <p class="lead" style="margin-bottom:0">
+            Qatalyst uses classical optimisation for most deployments, then escalates only when needed.
+          </p>
+          <ul class="list">
+            <li><strong>Classical (default)</strong> for reliable day-to-day scheduling and planning</li>
+            <li><strong>Hybrid</strong> when the problem is large, tightly coupled, or must be solved repeatedly under disruption</li>
+            <li><strong>Quantum-ready</strong> when the model structure and runtime constraints justify specialised quadratic solvers</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h2>When quantum is actually useful</h2>
+          <p class="lead" style="margin-bottom:0">
+            Quantum is not required for most problems. It becomes interesting in rare, high-stress scenarios.
+          </p>
+          <ul class="list">
+            <li>Many independent actors competing for limited shared capacity</li>
+            <li>Highly coupled decisions where local optimisation creates system-level congestion</li>
+            <li>Time-critical re-optimisation where classical methods become slow or unstable</li>
+            <li>Quadratic penalty structures that map naturally to specialised solvers</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section panel" aria-label="Outputs">
+        <h2>What the system returns</h2>
+        <p class="lead">
+          Qatalyst outputs decisions your team can implement immediately, alongside the reasoning and constraint checks needed for trust.
+        </p>
+        <section class="section grid" style="margin-top:18px">
+          <div class="card">
+            <h3>Decision plan</h3>
+            <p>Assignments, schedules, and recommendations for the next planning horizon.</p>
+          </div>
+          <div class="card">
+            <h3>Constraint checks</h3>
+            <p>Clear validation showing which constraints bind and why the plan is feasible.</p>
+          </div>
+          <div class="card">
+            <h3>Trade-offs</h3>
+            <p>What changed, what improved, and what was traded (time, cost, energy, emissions).</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="section panel">
+        <h2>Ready to test on your operational data?</h2>
+        <p class="lead" style="margin-bottom:0">
+          Share a small sample of demand, constraints, and site limits. We will map your decision problem and propose an approach, classical first,
+          with hybrid or quantum options only where they add value.
+        </p>
+        <p style="margin-top:14px;margin-bottom:0">
+          <a class="btn primary" href="contact.html">Contact</a>
+          <a class="btn" href="use-cases.html" style="margin-left:10px">See use cases</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>
+        <strong>Qatalyst</strong><br />
+        <span class="small">Classical-first optimisation with a quantum-ready path.</span>
+      </div>
+      <div class="small">
+        <a href="contact.html">Contact</a><br />
+        <a href="technology.html">Technology</a><br />
+        <a href="use-cases.html">Use cases</a>
+      </div>
+      <div class="small">
+        © <span id="year"></span> Qatalyst
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
