@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Qatalyst</title>
+  <meta name="description" content="Contact Qatalyst to request a demo or discuss optimisation for charging, ports, freight and logistics." />
+
+  <meta property="og:title" content="Contact | Qatalyst" />
+  <meta property="og:description" content="Request a demo or speak to Qatalyst about optimisation for real operations." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Qatalyst</span>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a data-nav href="/">Home</a>
+        <a data-nav href="technology.html">Technology</a>
+        <a data-nav href="use-cases.html">Use cases</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="container">
+      <section class="hero">
+        <div class="kicker"><span class="kdot" aria-hidden="true"></span> Contact</div>
+        <h1>Request a demo or start a conversation.</h1>
+        <p class="lead">
+          Tell us what you are optimising and what constraints matter. We will respond with a practical approach, classical first, with hybrid or quantum options only where they add value.
+        </p>
+      </section>
+
+      <section class="section two" aria-label="Contact form and office">
+        <div class="panel">
+          <h2>Request a demo</h2>
+          <p class="lead" style="margin-bottom:0">
+            Prefer email? Write directly to <a href="mailto:siti@qatalyst-quantum.co.uk">siti@qatalyst-quantum.co.uk</a>.
+          </p>
+
+          <!--
+            HOW TO MAKE THIS FORM SEND EMAIL:
+            If your site is static (e.g., GitHub Pages), the form cannot send email on its own.
+            Easiest option: Formspree
+              1) Create a Formspree form and verify your email
+              2) Replace ACTION_URL below with your Formspree endpoint, e.g. https://formspree.io/f/xxxxabcd
+              3) Remove the mailto fallback script if you want
+
+            For now, the form will use a mailto fallback if ACTION_URL is not set.
+          -->
+
+          <form id="contactForm"
+                action=""
+                method="POST"
+                style="margin-top:14px"
+                novalidate>
+
+            <!-- Honeypot (anti-spam). Keep hidden. -->
+            <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+              <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            </div>
+
+            <div class="grid" style="grid-template-columns:1fr 1fr; gap:12px;">
+              <div class="card" style="padding:14px;">
+                <label for="name" class="small"><strong>Name</strong></label><br />
+                <input id="name" name="name" type="text" required
+                       style="width:100%; margin-top:6px; padding:10px; border-radius:12px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.02); color:inherit;"
+                       placeholder="Your name" />
+              </div>
+
+              <div class="card" style="padding:14px;">
+                <label for="email" class="small"><strong>Email</strong></label><br />
+                <input id="email" name="email" type="email" required
+                       style="width:100%; margin-top:6px; padding:10px; border-radius:12px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.02); color:inherit;"
+                       placeholder="name@company.com" />
+              </div>
+            </div>
+
+            <div class="grid" style="grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+              <div class="card" style="padding:14px;">
+                <label for="company" class="small"><strong>Organisation</strong></label><br />
+                <input id="company" name="company" type="text"
+                       style="width:100%; margin-top:6px; padding:10px; border-radius:12px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.02); color:inherit;"
+                       placeholder="Company or organisation" />
+              </div>
+
+              <div class="card" style="padding:14px;">
+                <label for="role" class="small"><strong>Role</strong></label><br />
+                <input id="role" name="role" type="text"
+                       style="width:100%; margin-top:6px; padding:10px; border-radius:12px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.02); color:inherit;"
+                       placeholder="e.g., Fleet manager, Charging ops, Innovation lead" />
+              </div>
+            </div>
+
+            <div class="card" style="padding:14px; margin-top:12px;">
+              <label for="usecase" class="small"><strong>What are you optimising?</strong></label><br />
+              <select id="usecase" name="usecase"
+                      style="width:100%; margin-top:6px; padding:10px; border-radius:12px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.02); color:inherit;">
+                <option value="">Select a use case</option>
+                <option value="Depot and hub charging coordination">Depot and hub charging coordination</option>
+                <option value="Public charging network operations">Public charging network operations</option>
+                <option value="Ports and terminals">Ports and terminals</option>
+                <option value="Freight routing and scheduling">Freight routing and scheduling</option>
+                <option value="Capacity planning">Capacity planning</option>
+                <option value="Disruption response">Disruption response</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="card" style="padding:14px; margin-top:12px;">
+              <label for="message" class="small"><strong>Message</strong></label><br />
+              <textarea id="message" name="message" rows="6" required
+                        style="width:100%; margin-top:6px; padding:10px; border-radius:12px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.02); color:inherit;"
+                        placeholder="Tell us your constraints, timeline, and what success looks like."></textarea>
+            </div>
+
+            <div class="card" style="padding:14px; margin-top:12px;">
+              <label class="small"><strong>Preferred next step</strong></label><br />
+              <div style="margin-top:8px; display:flex; flex-wrap:wrap; gap:12px;">
+                <label><input type="radio" name="next_step" value="Request a demo" checked /> Request a demo</label>
+                <label><input type="radio" name="next_step" value="Discovery call" /> Discovery call</label>
+                <label><input type="radio" name="next_step" value="Send a sample dataset" /> Send a sample dataset</label>
+              </div>
+            </div>
+
+            <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn primary" type="submit">Send request</button>
+              <a class="btn secondary" href="mailto:siti@qatalyst-quantum.co.uk?subject=Qatalyst%20Demo%20Request">Email us directly</a>
+            </div>
+
+            <p id="formStatus" class="small" style="margin-top:10px; opacity:0.9;"></p>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h2>Main office</h2>
+          <p class="lead" style="margin-bottom:0">
+            Edinburgh, United Kingdom
+          </p>
+
+          <div style="margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.02)">
+            <!-- Edinburgh map embed -->
+            <iframe
+              title="Qatalyst main office - Edinburgh map"
+              src="https://www.google.com/maps?q=Edinburgh%2C%20United%20Kingdom&output=embed"
+              style="width:100%;height:320px;border:0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="card" style="padding:14px; margin-top:12px;">
+            <h3 style="margin-top:0">Email</h3>
+            <p style="margin-bottom:0">
+              <a href="mailto:siti@qatalyst-quantum.co.uk">siti@qatalyst-quantum.co.uk</a>
+            </p>
+          </div>
+
+          <div class="card" style="padding:14px; margin-top:12px;">
+            <h3 style="margin-top:0">What to include</h3>
+            <ul class="list">
+              <li>Decision to optimise (routing, scheduling, charging, allocation)</li>
+              <li>Key constraints (capacity, time windows, power caps)</li>
+              <li>Operational horizon (next hour, next day, weekly planning)</li>
+              <li>What success looks like (queue time, cost, readiness, emissions)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section panel">
+        <h2>Prefer a quick template?</h2>
+        <p class="lead" style="margin-bottom:0">
+          You can email us with: system context, decision variables, constraints, objective, and data format. We will reply with a proposed modelling and deployment plan.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>
+        <strong>Qatalyst</strong><br />
+        <span class="small">Classical-first optimisation with a quantum-ready path.</span>
+      </div>
+      <div class="small">
+        <a href="contact.html">Contact</a><br />
+        <a href="technology.html">Technology</a><br />
+        <a href="use-cases.html">Use cases</a>
+      </div>
+      <div class="small">
+        © <span id="year"></span> Qatalyst
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    (function () {
+      const form = document.getElementById('contactForm');
+      const statusEl = document.getElementById('formStatus');
+
+      // If you add a real endpoint (Formspree/Netlify/Getform), paste it here:
+      // form.action = "https://formspree.io/f/xxxxabcd";
+
+      function escapeVal(v) {
+        return encodeURIComponent((v || '').toString().trim());
+      }
+
+      form.addEventListener('submit', function (e) {
+        // Basic spam trap
+        const honeypot = form.querySelector('input[name="website"]');
+        if (honeypot && honeypot.value) {
+          e.preventDefault();
+          statusEl.textContent = "Thanks. We'll be in touch.";
+          return;
+        }
+
+        // If no action is set, fall back to mailto
+        if (!form.action) {
+          e.preventDefault();
+
+          const name = form.name.value;
+          const email = form.email.value;
+          const company = form.company.value;
+          const role = form.role.value;
+          const usecase = form.usecase.value;
+          const message = form.message.value;
+          const nextStep = (form.querySelector('input[name="next_step"]:checked') || {}).value || "Request a demo";
+
+          const subject = `Qatalyst enquiry: ${usecase || 'Request a demo'}`;
+          const body =
+`Name: ${name}
+Email: ${email}
+Organisation: ${company}
+Role: ${role}
+Use case: ${usecase}
+Preferred next step: ${nextStep}
+
+Message:
+${message}
+`;
+
+          const mailto = `mailto:siti@qatalyst-quantum.co.uk?subject=${escapeVal(subject)}&body=${escapeVal(body)}`;
+          window.location.href = mailto;
+
+          statusEl.textContent = "Opening your email client… If it does not open, email siti@qatalyst-quantum.co.uk.";
+        } else {
+          // If using a real endpoint, let the form submit normally.
+          statusEl.textContent = "Sending…";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
