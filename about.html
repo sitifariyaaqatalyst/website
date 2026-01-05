@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Use cases | Qatalyst</title>
-  <meta name="description" content="Use cases for Qatalyst across ports, freight, and transport systems optimisation." />
+  <meta name="description" content="Use cases for Qatalyst across ports, freight logistics, and electric charging coordination." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -31,7 +31,9 @@
       <section class="hero">
         <div class="kicker"><span class="kdot" aria-hidden="true"></span> Applications</div>
         <h1>Where Qatalyst delivers value.</h1>
-        <p class="lead">Optimisation problems appear everywhere. We focus on complex, constrained, operational settings.</p>
+        <p class="lead">
+          Optimisation problems appear everywhere. We focus on complex, constrained operational settings where decisions must be made quickly and reliably.
+        </p>
       </section>
 
       <section class="section grid">
@@ -47,6 +49,84 @@
           <h3>Transport systems</h3>
           <p>Multimodal coordination, disruption response, and resilient service planning with explicit trade-offs.</p>
         </div>
+      </section>
+
+      <section class="section panel" id="charging">
+        <h2>Featured study case: Electric freight charging coordination</h2>
+        <p class="lead">
+          Most freight charging happens at depots, but depots and shared hubs face hard constraints: limited site power, clustered arrivals, and strict readiness deadlines.
+          Qatalyst helps charging operators, depot operators, and fleets coordinate charging so vehicles are ready on time without creating queues or exceeding power limits.
+        </p>
+
+        <div class="section grid" style="margin-top:18px">
+          <div class="card">
+            <h3>Who uses it</h3>
+            <ul class="list">
+              <li><strong>Depot operators</strong> managing limited site power and overnight windows</li>
+              <li><strong>Charging operators</strong> running shared hubs used by multiple fleets</li>
+              <li><strong>Fleet operators</strong> needing reliable plans that protect state of charge and delivery schedules</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>The problem in simple terms</h3>
+            <ul class="list">
+              <li>Too many vehicles arrive at the same time, queues build quickly</li>
+              <li>Power caps limit how many vehicles can charge at full rate</li>
+              <li>Delays lead to missed departures and delivery windows</li>
+              <li>Simple rerouting moves congestion rather than solving it</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>What Qatalyst does</h3>
+            <ul class="list">
+              <li>Creates a rolling charging plan for the next 30 to 90 minutes</li>
+              <li>Recommends who charges now, who charges later, and at what rate</li>
+              <li>Reallocates demand smoothly across chargers and time slots</li>
+              <li>Uses classical optimisation by default, with hybrid or quantum methods applied selectively when scenarios are highly coupled and time-critical</li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="section two" style="margin-top:18px">
+          <div class="panel">
+            <h3>Typical inputs (anonymised)</h3>
+            <ul class="list">
+              <li>Charger availability, power limits, session durations, queue estimates</li>
+              <li>Vehicle state of charge, arrival time, readiness deadline, minimum required charge</li>
+              <li>Operational rules such as priority vehicles, minimum dwell time, and site policies</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Outputs users receive</h3>
+            <ul class="list">
+              <li>A site-level charging schedule that stays within the power cap</li>
+              <li>Vehicle-level recommendations: charger, time slot, and target charge</li>
+              <li>Congestion risk alerts and suggested corrective actions</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section two" style="margin-top:18px">
+          <div class="panel">
+            <h3>Success metrics</h3>
+            <ul class="list">
+              <li>Reduced queue time and fewer charging conflicts</li>
+              <li>Higher on-time vehicle readiness for departures</li>
+              <li>Smoother power demand and fewer peak events</li>
+              <li>Improved utilisation across chargers and time periods</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Simple scenario</h3>
+            <p>
+              A shared logistics depot hosts vehicles from multiple operators. Demand peaks between 18:00 and 22:00, but the site has a strict power cap.
+              Qatalyst produces a charging schedule that prepares vehicles by their deadlines, avoids queue build-up, and keeps total power draw within limits.
+              Recommendations update every 10 to 15 minutes if conditions change.
+            </p>
+          </div>
+        </section>
       </section>
 
       <section class="section two">
@@ -73,9 +153,14 @@
       </section>
 
       <section class="section panel">
-        <h2>Want a tailored use case page?</h2>
+        <h2>Want to apply this to your site or network?</h2>
         <p class="lead" style="margin-bottom:0">
-          If you tell me your top priority (ports, freight, or public sector transport), I will rewrite this page to match that audience and add a short case-study style section.
+          Share a short description of your charging setup, your power constraints, and your operational deadlines.
+          We will map the decision problem and propose a practical optimisation approach, classical first, with hybrid or quantum options only where they add value.
+        </p>
+        <p style="margin-top:14px;margin-bottom:0">
+          <a class="btn primary" href="contact.html">Contact</a>
+          <a class="btn" href="technology.html" style="margin-left:10px">See the technology</a>
         </p>
       </section>
     </div>
@@ -99,4 +184,3 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-
